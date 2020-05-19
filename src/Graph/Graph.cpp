@@ -27,7 +27,7 @@ bool Graph::addEdge(int id, int v_id1, int v_id2) {
 	double dist = v1->pos.euclidianDistance(v2->pos); //in meters
 	double time = dist * 3600 / (VAN_SPEED * 1000);
 	v1->addEdge(id, v1, v2, time);
-	v2->addEdge(id+1, v2, v1, time);
+	//v2->addEdge(id+1, v2, v1, time);
 	return true;
 }
 
